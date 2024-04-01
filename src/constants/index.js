@@ -15,15 +15,17 @@ import {
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
 	threejs,
+	unrealEngine,
+	sqlServer,
+	bottega,
+	kiewit,
+	TechToolbox,
+	DepotWizard,
+	passwordManager,
+	portfolio,
 } from "../assets";
+import { Tech } from "../components";
 
 export const navLinks = [
 	{
@@ -46,7 +48,7 @@ const services = [
 		icon: web,
 	},
 	{
-		title: "React Native Developer",
+		title: "React Developer",
 		icon: mobile,
 	},
 	{
@@ -54,7 +56,7 @@ const services = [
 		icon: backend,
 	},
 	{
-		title: "Content Creator",
+		title: "Indie Game Developer",
 		icon: creator,
 	},
 ];
@@ -73,16 +75,12 @@ const technologies = [
 		icon: javascript,
 	},
 	{
-		name: "TypeScript",
-		icon: typescript,
+		name: "Sql",
+		icon: sqlServer,
 	},
 	{
 		name: "React JS",
 		icon: reactjs,
-	},
-	{
-		name: "Redux Toolkit",
-		icon: redux,
 	},
 	{
 		name: "Tailwind CSS",
@@ -105,66 +103,35 @@ const technologies = [
 		icon: git,
 	},
 	{
-		name: "figma",
-		icon: figma,
-	},
-	{
-		name: "docker",
-		icon: docker,
+		name: "Unreal Engine",
+		icon: unrealEngine,
 	},
 ];
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
+		title: "Full-Stack Developer Bootcamp",
+		company_name: "Bottega University",
+		icon: bottega,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "November 2019 - November 2022",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Learning how to design, implement, and test web applications using frameworks like React and Flask.",
+			"Applying UI/UX best practices for an optimal customer experience.",
+			"Understanding theory, architecture, and use of both NoSQL and SQL databases.",
 		],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
-		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
+		title: "Hardware Depot Technician",
+		company_name: "Kiewit Corporation",
+		icon: kiewit,
+		iconBg: "#FFFFFF",
+		date: "July 2021 - Current",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Developing and maintaining desktop applications built in Powershell to automate and facilitate daily tasks.",
+			"Collaborating with the team to consistently figure out new methods and technologies to increase efficiency and accuracy of our job responsibilities.",
+			"Utilizing SQL databases to track and maintain important data points related to job functions.",
+			"Imaging a wide variety of computers and workstations for company use, ensuring devices are up-to-date with necessary software properly installed.",
 		],
 	},
 ];
@@ -198,67 +165,86 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "TechToolbox",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"Desktop application designed to automate tasks required to set up work computers. These tasks include installing Windows and driver updates and installing necessary software",
 		tags: [
 			{
-				name: "react",
+				name: "powershell",
 				color: "blue-text-gradient",
+			},
+			{
+				name: "sql",
+				color: "green-text-gradient",
+			},
+		],
+		image: TechToolbox,
+	},
+	{
+		name: "Depot Wizard",
+		description:
+			"Powershell form designed to submit computer request tickets. The form receives input from user, including type of request, user information with ability to validate shipping address, and user credentials",
+		tags: [
+			{
+				name: "powershell",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "sql",
+				color: "green-text-gradient",
+			},
+			{
+				name: "azure",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "citrix",
+				color: "orange-text-gradient",
+			},
+		],
+		image: DepotWizard,
+	},
+	{
+		name: "Password Manager",
+		description:
+			"Simple Python form built in Tkinter that generates a random complex password for a specified account, and stores the password to a MongoDB data cluster",
+		tags: [
+			{
+				name: "python",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "tkinter",
+				color: "green-text-gradient",
 			},
 			{
 				name: "mongodb",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
 				color: "pink-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: passwordManager,
+		source_code_link: "https://github.com/NHackleman/Password-Manager",
 	},
 	{
-		name: "Job IT",
+		name: "Personal Portfolio",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"My personal portfolio you are seeing now! It has been designed to emphasize my passion for software development.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
+				name: "tailwind",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "threejs",
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-		tags: [
-			{
-				name: "nextjs",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "css",
-				color: "pink-text-gradient",
-			},
-		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: portfolio,
+		source_code_link: "https://github.com/NHackleman/3D_Portfolio",
 	},
 ];
 

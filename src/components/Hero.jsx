@@ -6,7 +6,6 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
 	return (
 		<section className="relative w-full h-screen mx-auto">
-			
 			<div
 				className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl flex flex-row items-start gap-5`}
 			>
@@ -20,9 +19,9 @@ const Hero = () => {
 						Hi, I'm <span className="text-[#915eff]">Nathan</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						I develop 3D visuals, user{" "}
+						I develop websites, desktop{" "}
 						<br className="sm:block hidden" />
-						interfaces, and web applications
+						applications, and 3D games
 					</p>
 				</div>
 			</div>

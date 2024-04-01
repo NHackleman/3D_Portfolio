@@ -20,43 +20,45 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sqlServer from "./tech/sql-server.png";
+import unrealEngine from "./tech/unreal-engine.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import bottega from "./company/bottega.png";
+import kiewit from "./company/kiewit.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import TechToolbox from "./TechToolbox.png";
+import DepotWizard from "./DepotWizard.png";
+import passwordManager from "./password-manager.png";
+import portfolio from "./portfolio.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+	logo,
+	backend,
+	creator,
+	mobile,
+	web,
+	github,
+	menu,
+	close,
+	css,
+	docker,
+	figma,
+	git,
+	html,
+	javascript,
+	mongodb,
+	nodejs,
+	reactjs,
+	redux,
+	tailwind,
+	typescript,
+	threejs,
+	sqlServer,
+	unrealEngine,
+	bottega,
+	kiewit,
+	TechToolbox,
+	DepotWizard,
+	passwordManager,
+	portfolio,
 };
